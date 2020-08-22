@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5536765-BFEC-4D55-9241-E787B6A219E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SIMAD_Library_MS.My.MyApplication</StartupObject>
+    <RootNamespace>SIMAD_Library_MS</RootNamespace>
+    <AssemblyName>SIMAD_Library_MS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SIMAD_Library_MS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SIMAD_Library_MS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutSoftware.Designer.vb">
+      <DependentUpon>aboutSoftware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aboutSoftware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookReturn.Designer.vb">
+      <DependentUpon>frmBookReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePass.Designer.vb">
+      <DependentUpon>frmChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgetPassword.Designer.vb">
+      <DependentUpon>frmForgetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageBooks.Designer.vb">
+      <DependentUpon>frmManageBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnedBooks.Designer.vb">
+      <DependentUpon>frmReturnedBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturnedBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserReg.Designer.vb">
+      <DependentUpon>frmUserReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookBarrow.Designer.vb">
+      <DependentUpon>FrmBookBarrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBookBarrow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookReg.Designer.vb">
+      <DependentUpon>frmBookReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentReg.Designer.vb">
+      <DependentUpon>frmStudentReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserManage.Designer.vb">
+      <DependentUpon>frmUserManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mconne.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SIMALibrayDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIMALibrayDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentManagement.Designer.vb">
+      <DependentUpon>StudentManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aboutSoftware.resx">
+      <DependentUpon>aboutSoftware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookReturn.resx">
+      <DependentUpon>frmBookReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePass.resx">
+      <DependentUpon>frmChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgetPassword.resx">
+      <DependentUpon>frmForgetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageBooks.resx">
+      <DependentUpon>frmManageBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnedBooks.resx">
+      <DependentUpon>frmReturnedBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserReg.resx">
+      <DependentUpon>frmUserReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBookBarrow.resx">
+      <DependentUpon>FrmBookBarrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookReg.resx">
+      <DependentUpon>frmBookReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentReg.resx">
+      <DependentUpon>frmStudentReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserManage.resx">
+      <DependentUpon>frmUserManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentManagement.resx">
+      <DependentUpon>StudentManagement.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SIMALibrayDataSet1.xsc">
+      <DependentUpon>SIMALibrayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SIMALibrayDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SIMALibrayDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SIMALibrayDataSet1.xss">
+      <DependentUpon>SIMALibrayDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_hide_password-08-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_hide_password-08-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_hide_password-07-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forgot Password_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Groups_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book Stack_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book Stack_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brake Warning_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Replay_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Synchronize_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Registration_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Group Woman Man_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fingerprint Scan_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change User_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chrome_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet Explorer_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opera_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\So.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maintenance_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SIMAD_Library_MS
+</name>
+</assembly>
+<members>
+<member name="T:SIMAD_Library_MS.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1.tbl_loginDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1.tbl_loginRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1.tbl_loginRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.tbl_loginTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(SIMAD_Library_MS.SIMALibrayDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(SIMAD_Library_MS.SIMALibrayDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(SIMAD_Library_MS.SIMALibrayDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager.UpdateAll(SIMAD_Library_MS.SIMALibrayDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:SIMAD_Library_MS.SIMALibrayDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Add_User_Group_Woman_Man_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Book_Stack_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Book_Stack_50px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Brake_Warning_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Change_User_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Chrome_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Close_Window_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Close_Window_64px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.download">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Fingerprint_Scan_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Forgot_Password_52px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Internet_Explorer_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Lock_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Maintenance_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Opera_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Registration_64px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Replay_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Search_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.show_hide_password_07_512">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.show_hide_password_08_512">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.show_hide_password_08_5121">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.So">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Student_Registration_50px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Synchronize_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.Trash_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SIMAD_Library_MS.My.Resources.Resources.User_Groups_48px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:SIMAD_Library_MS.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
